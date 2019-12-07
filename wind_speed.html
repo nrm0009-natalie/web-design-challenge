@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+  <meta charset="UTF-8">
+  <title>Web Design Challenge</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="web-design_css.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+</head>
+​
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" id="logo"href="index.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                            <a class="dropdown-item" href="max_temp.html">Max Temp</a>
+                            <a class="dropdown-item" href="humidity.html">Humidity</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparisons.html">Comparisons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+
+                </ul>          
+            </div>
+        </nav>
+
+        <!--code for landing page-->
+        <div class="container">
+            <section class="row">
+                <div class="col-md-8">
+                <article class="description-content">
+                    <h1 class="description-header text-center">Summary: Latitude vs. Wind</h1>
+                    <hr class="description-hr"/>
+                        <a href="wind_speed.html"><img src="/Users/admin/Documents/Data_Analytics_Class/api-challenge/latitudevswind_scatter.png"  alt="Latitude vs. Wind" class="imageNav-photo-visual active mx-auto d-block"></a>
+                        <p> Based on the above graph we can gather that extremely high percentages of humidity are far more common
+                            than low percentages. Cities with humidity percentages below 60 are fairly low in number, and those with 
+                            extremely low humidity only occur between latitudes of -40 and 80 degrees. Also of note is that there
+                            is no city with a humity of 0%, but there are quite a few with that of 100%. 
+                        </p>
+                    </article>
+                </div>
+        ​
+                <div class="col-md-4">
+                        
+                        
+                <!-- Start of Visualizations imageNav Area -->
+                <section id="imageNav-area">
+                    <div class="imageNav-content">
+                    <h2 class="imageNav-header text-center">Visualizations</h2>
+                    <hr />
+                        <div id="images">
+                            <a href="wind_speed.html"> <img src="/Users/admin/Documents/Data_Analytics_Class/api-challenge/latitudevswind_scatter.png" class="imageNav-photo active" alt="Latitude vs. Wind" ></a>
+                            <a href="cloudiness.html"> <img src="/Users/admin/Documents/Data_Analytics_Class/api-challenge/latitudevsclouds_scatter.png" class="imageNav-photo active"  alt="Latitude vs. clouds"></a>
+                            <a href="humidity.html"> <img src="/Users/admin/Documents/Data_Analytics_Class/api-challenge/latitudevshumidity_scatter.png" class="imageNav-photo active" alt="Latitude vs. Humidity"></a>
+                            <a href="max_temp.html"> <img src="/Users/admin/Documents/Data_Analytics_Class/api-challenge/latitudevstemp_scatter.png" class="imageNav-photo active" alt="Latitude vs. Temp"></a>
+                        </div>
+                        </div>
+                        </section>
+            
+                </div>
+            </section>
+    </div>
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+            
+</body>
+</html>

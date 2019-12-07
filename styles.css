@@ -48,7 +48,7 @@ body {
     color: #fff;
   
     /* Visual */
-    background: #4aaaa5;
+    background: rgb(122, 177, 202);
   }
   
   /* Logo hover state */
@@ -57,29 +57,8 @@ body {
     opacity: 0.7;
   }
   
-  .navbar-right-custom {
-    /* Box-model */
-    padding-top: 6px;
-    padding-right: 20px;
-    padding-left: 200px;
-  
-    /* Typography */
-    font-family: Arial;
-    font-weight: lighter;
-  }
-  
-  /* Nav element hover state */
-  .navbar-default .navbar-nav > li > a:hover {
-    color: #4aaaa5;
-    opacity: 0.7;
-  }
-
-
 /* Media query for nav */
 @media only screen and (max-width: 767px) {
-  .navbar-header {
-    background-color: #4aaaa5;
-  }
 
   #logo {
 
@@ -202,8 +181,8 @@ body {
   /* Box-model */
   height: 46%;
   margin: 5px;
+  
 }
-
 
 .imageNav-photo:hover {
   /* Visuals */
@@ -211,6 +190,25 @@ body {
 }
 
 .imageNav-photo.active {
+  /* Visuals */
+  border: 2px solid #4aaaa5;
+}
+
+/*changing the box model for the visualization pages -----------------*/
+.imageNav-photo-visual {
+  /* Box-model */
+  width: 80%;
+  height: 80%;
+  margin: 10px;
+  padding: 5px;
+}
+
+.imageNav-photo-visual:hover {
+  /* Visuals */
+  opacity: 0.6;
+}
+
+.imageNav-photo-visual.active {
   /* Visuals */
   border: 2px solid #4aaaa5;
 }
@@ -225,6 +223,18 @@ body {
 }
 
 /* ----IMAGE NAV END---- */
+
+
+
+/* ----data page customization ----*/
+object{
+  align-content: center;
+  
+
+}
+
+
+
 
 /* ----COMPARISON START---- */
 .comparison-image:hover {
